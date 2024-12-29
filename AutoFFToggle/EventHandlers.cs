@@ -20,9 +20,9 @@ namespace AutoFFToggle
             Server.FriendlyFire = true;
             foreach (Player ply in Player.List)
             {
-                if (MainPlugin.Singleton.Config.ItemsToGive.Count > 0)
+                if (AutoFFToggle.Singleton.Config.ItemsToGive.Count > 0)
                 {
-                    foreach (ItemType item in MainPlugin.Singleton.Config.ItemsToGive)
+                    foreach (ItemType item in AutoFFToggle.Singleton.Config.ItemsToGive)
                         ply.AddItem(item);
                 }
             }
